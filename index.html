@@ -12,6 +12,7 @@
           rgba(255, 255, 255, 0) 100%
         );
       }
+
       .bbtn {
         border-radius: 10px;
         background: rgb(171, 239, 95);
@@ -40,10 +41,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="w-11/12 mx-auto">
-      <div class="navbar header-bg mb-4 rounded-md shadow-xl">
+    <header class="w-11/12 header-bg mx-auto mb-20">
+      <div class="navbar mb-4 rounded-md shadow-xl">
         <!-- 11 -->
-        <div class="navbar-start flex gap-2 items-center ">
+        <div class="navbar-start flex gap-2 items-center">
           <i class="text-lime-400 -rotate-45 fa-solid fa-circle-right mt-1"></i>
           <h1 class="text-xl sm:text-2xl font-semibold">Rinterio</h1>
         </div>
@@ -74,21 +75,28 @@
         </div>
       </div>
       <!-- hero section -->
-      <div class="hero bg-base-200 min-h-screen">
+      <div class="hero bg-base-200 h-auto my-5">
         <div class="hero-content text-center">
           <div class="w-full flex items-center flex-col gap-3">
-
-            <div class=" w-11/12 sm:w-7/12 border-2"> <img src="./assingment3/assets/banner.png" alt=""></div>
+            <div class="w-11/12 sm:w-7/12 border-2">
+              <img src="./assingment3/assets/banner.png" alt="" />
+            </div>
             <h1 class="text-5xl font-bold tracking-tight">
-              A barn house of this design has a striking appearance
+              A barn house of this design has a <br />striking appearance
             </h1>
-            <p class="py-6 text-sm text-[#494949]">
+            <p class="py-6 px-10 text-sm text-[#494949]">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents, and large windows that flood the space with natural
               light.
             </p>
-            <button class="flex gap-2 items-center justify-center font-semibold tracking-tight w-11/12 sm:w-36 p-2 rounded-2xl sm:btn bg-lime-200">View Details<i class="text-lime-400 -rotate-45 fa-solid fa-circle-right"></i></button>
+            <button
+              class="flex gap-2 items-center justify-center font-semibold tracking-tight w-11/12 sm:w-36 p-2 rounded-2xl sm:btn bg-lime-200"
+            >
+              View Details<i
+                class="text-lime-400 -rotate-45 fa-solid fa-circle-right"
+              ></i>
+            </button>
           </div>
         </div>
       </div>
@@ -99,7 +107,71 @@
       <button class="btn btn-secondary">Secondary</button>
       <button class="btn btn-accent">Accent</button>
     </header>
-    <main class="w-11/12 mx-auto"></main>
-    <footer class="w-11/12 mx-auto"></footer>
+
+    <main class="w-11/12 mx-auto">
+      <!-- uoyr work prosses-->
+      <section class="bg-orange-50">
+        <div class="text-center py-10 sm:px-20">
+          <p class="btn shadow-lg">
+            <i class="fa-solid fa-arrow-right"></i> How we works
+          </p>
+          <h1 class="text-2xl p-3 font-bold">Our Works Process</h1>
+          <p class="text-[#494949] text-[14px] py-2"> 
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- grid section -->
+
+        <div class="grid sm:grid-cols-4 gap-2 pb-5">
+
+          <div class="bg-[#E7C1D3] p-4 rounded-md"><img src="./assingment3/assets/concept.png" alt="">
+            <h1 class="text-xl font-semibold py-2">Concep</h1>
+            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+          <div class="bg-[#EFDA6E] p-4 rounded-md"><img src="./assingment3/assets/concept.png" alt="">
+            <h1 class="text-xl font-semibold py-2">Concep</h1>
+            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+          <div class="bg-[#A4DAC3] p-4 rounded-md"><img src="./assingment3/assets/concept.png" alt="">
+            <h1 class="text-xl font-semibold py-2">Concep</h1>
+            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+          <div class="bg-[#77AAEA] p-4 rounded-md"><img src="./assingment3/assets/concept.png" alt="">
+            <h1 class="text-xl font-semibold py-2">Concep</h1>
+            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black my-16">
+      <section class="sm:w-9/12 mx-auto text-center py-14 text-white">
+        <h1 class="text-2xl font-semibold py-2">
+          <i class="text-lime-400 -rotate-45 fa-solid fa-circle-right mt-1"></i>
+          Rinterio
+        </h1>
+
+        <p class="px-7 sm:px-20 text-sm text-[#737373] py-2">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        <ul
+          class="text-[#E9E9E9] flex sm:flex-row flex-col sm:justify-around py-4 gap-4"
+        >
+          <li>Home</li>
+          <li>Services</li>
+          <li>Portfolio</li>
+          <li>Bloge</li>
+          <li>Contac Us</li>
+        </ul>
+        <button
+          class="bbtn text-black w-9/12 sm:w-48 rounded-2xl mt-6 text-lg font-semibold"
+        >
+          Book Consult <i class="-rotate-45 fa-solid fa-circle-right"></i>
+        </button>
+      </section>
+    </footer>
   </body>
 </html>
